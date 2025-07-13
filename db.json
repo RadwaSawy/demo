@@ -1,4 +1,5 @@
-[
+{
+"checker": [
   {
     "id": "1",
     "category": "Documents",
@@ -120,3 +121,5 @@
     "overridden": false
   }
 ] 
+
+}
