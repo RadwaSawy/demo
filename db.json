@@ -1,14 +1,122 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "id": "1",
+    "category": "Documents",
+    "status": "pass",
+    "code": "ARCH-DOC-1.1",
+    "description": "Valid consultant license",
+    "extracted": "Expiry: 2025-11-27",
+    "expected": "Must be valid",
+    "suggestion": "License is valid and meets all requirements",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 2.1.3 - Consultant License Requirements",
+    "confidence": 95,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "2",
+    "category": "Plans",
+    "status": "fail",
+    "code": "ARCH-PLAN-2.1",
+    "description": "Setback between villa and annexes",
+    "extracted": "1.3m",
+    "expected": ">= 1.5m",
+    "suggestion": "Distance between main villa and proposed annex in drawing ARCH-112 is 1.3m. Please increase to minimum 1.5m to comply with setback requirements.",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 4.2.1 - Residential Setbacks",
+    "confidence": 88,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "3",
+    "category": "Plans",
+    "status": "fail",
+    "code": "ARCH-PLAN-4.2",
+    "description": "Ground floor window sill height",
+    "extracted": "0.6m",
+    "expected": ">= 0.9m",
+    "suggestion": "Windows in main facade (ARCH-117) have sill height of 60cm. Must be raised to minimum 90cm for safety compliance.",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 5.3.2 - Window Safety Requirements",
+    "confidence": 92,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "4",
+    "category": "Plans",
+    "status": "warn",
+    "code": "ARCH-PLAN-5.1",
+    "description": "Ventilation for all rooms",
+    "extracted": "All rooms have windows",
+    "expected": "5% (service) / 10% (residential) of floor area",
+    "suggestion": "While all rooms have windows, AI cannot definitively calculate window-to-floor area ratio. Manual verification recommended for accurate compliance assessment.",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 6.1.4 - Natural Ventilation",
+    "confidence": 65,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "5",
+    "category": "Elevations",
+    "status": "fail",
+    "code": "ARCH-ELEV-3.1",
+    "description": "Stair riser height within limits",
+    "extracted": "17.5cm",
+    "expected": "<= 16.5cm",
+    "suggestion": "Stair details in drawing ARCH-124 show riser height of 17.5cm. This exceeds maximum allowed. Please modify stair design to meet safety standards.",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 7.2.3 - Staircase Design Standards",
+    "confidence": 90,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "6",
+    "category": "Elevations",
+    "status": "pass",
+    "code": "ARCH-ELEV-1.1",
+    "description": "Light colors used in facades",
+    "extracted": "95%",
+    "expected": ">= 75%",
+    "suggestion": "Facade color scheme meets all aesthetic requirements",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 5.1.4 - Facade Color Guidelines",
+    "confidence": 98,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "7",
+    "category": "Structural",
+    "status": "warn",
+    "code": "ARCH-STR-2.1",
+    "description": "Beam reinforcement details",
+    "extracted": "Details provided but require verification",
+    "expected": "Complete reinforcement specifications",
+    "suggestion": "Structural drawings show beam reinforcement but detailed specifications need manual verification by structural engineer.",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 8.1.2 - Structural Reinforcement",
+    "confidence": 75,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
+  },
+  {
+    "id": "8",
+    "category": "MEP",
+    "status": "pass",
+    "code": "ARCH-MEP-1.1",
+    "description": "Electrical panel location",
+    "extracted": "Located in designated utility area",
+    "expected": "Accessible and properly located",
+    "suggestion": "Electrical panel placement meets all safety and accessibility requirements",
+    "buildingCodeRef": "Ajman Building Code 2023, Section 9.2.1 - Electrical Installations",
+    "confidence": 85,
+    "reviewed": false,
+    "userNotes": "",
+    "overridden": false
   }
-}
+] 
